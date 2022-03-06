@@ -30,7 +30,7 @@ function Home() {
         <Row>
           <Col sm={8}>
             <Row>
-              <p>Nuevo párrafo</p>
+              <p>Productos</p>
               {products.map((product) => (
                 <Product key={product._id} product={product} />
               ))}

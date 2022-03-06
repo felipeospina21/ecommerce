@@ -1,4 +1,5 @@
 import { createStore } from "redux"
+import { composeWithDevTools } from "@redux-devtools/extension"
 
 function reducer(state = { cart: [] }, action) {
   if (action.type === "ADD_TO_CART") {
@@ -8,4 +9,4 @@ function reducer(state = { cart: [] }, action) {
   }
 }
 
-export default createStore(reducer)
+export default createStore(reducer, composeWithDevTools())
