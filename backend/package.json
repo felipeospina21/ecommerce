@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon index",
-    "start": "NODE_ENV=production node index",
+    "dev": "nodemon index",
+    "start": "node index",
     "test": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --detectOpenHandles --forceExit"
   },
   "keywords": [],
@@ -16,6 +16,7 @@
     "cors": "^2.8.5",
     "dotenv": "^12.0.4",
     "express": "^4.17.2",
+    "mercadopago": "^1.5.12",
     "mongoose": "^6.1.6"
   },
   "devDependencies": {
